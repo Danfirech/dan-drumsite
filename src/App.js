@@ -20,8 +20,8 @@ function App() {
       <Navbar />
       <Router>
         <Routes>
-          <Route path="/Contact" component={Contact} />
-          <Route path="/Navbar2" component={Navbar2} />
+          <Route path="/Contact" element={<Contact />} />
+          <Route path="/Navbar2" element={<Navbar2 />} />
         </Routes>
       </Router>
     </Container>
