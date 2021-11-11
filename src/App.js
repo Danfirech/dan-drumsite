@@ -1,6 +1,9 @@
 import styled from "styled-components";
 import Navbar from "./components/Navbar";
 import DanFull from "./images/danfull.png";
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import Contact from "./components/Contact";
+import Navbar2 from "./components/Navbar2";
 
 const Container = styled.div`
   height: 100vh;
@@ -13,10 +16,15 @@ const Container = styled.div`
 
 function App() {
   return (
-    <div className="App">
+    <Container>
       <Navbar />
-      <Container></Container>
-    </div>
+      <Router>
+        <Routes>
+          <Route path="/Contact" component={Contact} />
+          <Route path="/Navbar2" component={Navbar2} />
+        </Routes>
+      </Router>
+    </Container>
   );
 }
 

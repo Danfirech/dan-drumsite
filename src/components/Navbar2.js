@@ -9,7 +9,7 @@ const Container = styled.div`
 const Left = styled.div`
   width: 33%;
   display: flex;
-  background-color: lightgray;
+  background-color: red;
   align-items: center;
 `;
 const Middle = styled.div`
@@ -41,7 +41,7 @@ const Tag = styled.h1`
   font-size: 40px;
 `;
 
-const Navbar = () => {
+const Navbar2 = () => {
   return (
     <Container>
       <Left>
@@ -55,4 +55,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default Navbar2;
