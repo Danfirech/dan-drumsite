@@ -8,11 +8,7 @@ const Container = styled.div`
 `;
 
 const Contact = () => {
-  return (
-    <div>
-      <h1>Help</h1>
-    </div>
-  );
+  return <Container></Container>;
 };
 
 export default Contact;

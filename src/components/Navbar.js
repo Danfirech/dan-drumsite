@@ -9,18 +9,18 @@ const Container = styled.div`
 const Left = styled.div`
   width: 33%;
   display: flex;
-  background-color: lightgray;
+  background-color: :
   align-items: center;
 `;
 const Middle = styled.div`
   width: 33%;
   display: flex;
-  background-color: lightgray;
+  background-color: #d3d3d3;
 `;
 const Right = styled.div`
   width: 34%;
   display: flex;
-  background-color: lightgray;
+  background-color: #d3d3d3;
   justify-content: space-between;
   align-items: center;
   padding-right: 20px;
@@ -50,6 +50,8 @@ const Navbar = () => {
       <Middle></Middle>
       <Right>
         <Tag>Contact</Tag>
+        <Tag>About</Tag>
+        <Tag>Video</Tag>
       </Right>
     </Container>
   );
