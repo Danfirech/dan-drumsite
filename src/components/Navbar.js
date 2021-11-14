@@ -4,12 +4,13 @@ import styled from "styled-components";
 const Container = styled.div`
   height: 140px;
   display: flex;
+  background-color: #d3d3d3;
 `;
 
 const Left = styled.div`
   width: 33%;
   display: flex;
-  background-color: :
+  background-color: #d3d3d3;
   align-items: center;
 `;
 const Middle = styled.div`

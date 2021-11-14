@@ -10,35 +10,35 @@ const Wrapper = styled.div`
   height: 100vh;
   overflow: hidden;
   position: relative;
-  background-color: lightgray;
-  height: 2425px;
+  background-color: #d3d3d3;
+  height: 2000px;
 `;
 
 const Container = styled.div`
   height: 100vh;
   overflow: hidden;
   position: relative;
-  background-color: lightgray;
-  height: 2300px;
+  background-color: none;
+  height: 100vh;
 `;
 
 function App() {
   return (
-    <Wrapper>
+    // <Wrapper>
+    <Container>
       <Navbar />
-      <Container>
-        <video className="videoTag" autoPlay loop muted>
-          <source src={Video} type="video/mp4" />
-        </video>
-        <Router>
-          <Routes>
-            <Route path="/Contact" element={<Contact />} />
-            <Route path="/Videos" element={<Videos />} />
-            <Route path="/About" element={<About />} />
-          </Routes>
-        </Router>
-      </Container>
-    </Wrapper>
+      <video className="videoTag" autoPlay loop muted>
+        <source src={Video} type="video/mp4" />
+      </video>
+      <Router>
+        <Routes>
+          <Route path="/Contact" element={<Contact />} />
+          <Route path="/Videos" element={<Videos />} />
+          <Route path="/About" element={<About />} />
+        </Routes>
+      </Router>
+    </Container>
+    // </Wrapper>
   );
 }
 
